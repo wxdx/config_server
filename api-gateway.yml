@@ -1,0 +1,11 @@
+#服务端口
+server:
+  port: 9000
+
+#zuul网关路由配置
+zuul:
+  routes:
+    order-server: /apigateway/order/**
+    product-server: /apigateway/product/**
+  ignored-patterns:
+    - /*-server/**
