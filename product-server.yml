@@ -1,0 +1,9 @@
+#服务端口号
+server:
+  port: 8771
+  
+#sleuth采集量 默认0.1  
+spring:
+  sleuth:
+    sampler:
+      probability: 1  
