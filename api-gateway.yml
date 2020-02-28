@@ -1,6 +1,21 @@
 #服务端口
 server:
   port: 9000
+  
+spring:
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest  
+
+#暴露全部的监控信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  
 
 #zuul网关路由配置
 zuul:
